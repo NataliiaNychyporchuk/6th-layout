@@ -1,0 +1,114 @@
+   /* source-sans-pro-light */
+
+   @font-face {
+
+       font-family: 'Source Sans Pro';
+
+       src: url('../fonts/Source_Sans_Pro/SourceSansPro-Light/SourceSansPro-Light.ttf'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Light/SourceSansPro-Light.woff'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Light/SourceSansPro-Light.woff2');
+       font-style: normal;
+
+       font-weight: 300;
+   }
+
+
+   /* source-sans-pro-regular italic  */
+
+   @font-face {
+
+       font-family: 'Source Sans Pro';
+
+
+       src: url('../fonts/Source_Sans_Pro/SourceSansPro-Italic/SourceSansPro-Italic.ttf'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Italic/SourceSansPro-Italic.woff'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Italic/SourceSansPro-Italic.woff2');
+
+       font-style: italic;
+
+       font-weight: 400;
+
+   }
+
+   /* source-sans-pro-regular */
+
+   @font-face {
+
+       font-family: 'Source Sans Pro';
+
+       src: url('../fonts/Source_Sans_Pro/SourceSansPro-Regular/SourceSansPro-Regular.ttf'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Regular/SourceSansPro-Regular.woff'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Regular/SourceSansPro-Regular.woff2');
+
+
+       font-style: normal;
+
+       font-weight: 400;
+
+   }
+
+   /* source-sans-pro-semi-bold  */
+
+   @font-face {
+
+       font-family: 'Source Sans Pro';
+
+       font-style: normal;
+
+       font-weight: 600;
+
+       src: url('../fonts/Source_Sans_Pro/SourceSansPro-SemiBold/SourceSansPro-SemiBold.ttf'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-SemiBold/SourceSansPro-SemiBold.woff'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-SemiBold/SourceSansPro-SemiBold.woff2');
+       font-style: normal;
+
+       font-weight: 600;
+   }
+
+
+   /* source-sans-pro-bold  */
+
+   @font-face {
+
+       font-family: 'Source Sans Pro';
+
+       src: url('../fonts/Source_Sans_Pro/SourceSansPro-Bold/SourceSansPro-Bold.ttf'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Bold/SourceSansPro-Bold.woff'),
+           url('../fonts/Source_Sans_Pro/SourceSansPro-Bold/SourceSansPro-Bold.woff2');
+       font-style: normal;
+
+       font-weight: 700;
+
+   }
+
+
+   /* quicksand-regular */
+
+   @font-face {
+
+       font-family: 'Quicksand';
+
+       src: url('../fonts/Quicksand/Quicksand-Regular/Quicksand-Regular.ttf'),
+           url('../fonts/Quicksand/Quicksand-Regular/Quicksand-Regular.woff'),
+           url('../fonts/Quicksand/Quicksand-Regular/Quicksand-Regular.woff2');
+
+       font-style: normal;
+
+       font-weight: 400;
+   }
+
+   /* quicksand-bold */
+
+   @font-face {
+
+       font-family: 'Quicksand';
+
+       src: url('../fonts/Quicksand/Quicksand-Bold/Quicksand-Bold.ttf'),
+           url('../fonts/Quicksand/Quicksand-Bold/Quicksand-Bold.woff'),
+           url('../fonts/Quicksand/Quicksand-Bold/Quicksand-Bold.woff2');
+
+       font-style: normal;
+
+       font-weight: 700;
+
+   }

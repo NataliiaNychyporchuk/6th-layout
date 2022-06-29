@@ -1,0 +1,99 @@
+@import "fonts";
+@import "variables";
+@import "header";
+@import "features";
+@import "about";
+@import "testimonials";
+@import "feedback";
+@import "download";
+@import "pricing";
+@import "contact";
+@import "footer";
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/mixins/_breakpoints";
+
+* {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+
+    &:hover {
+        color: $white;
+        text-decoration: none;
+    }
+}
+
+h1 {
+    font-size: 48px;
+    color: $white;
+    line-height: 48px;
+    letter-spacing: 0.4px;
+
+
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: $dark;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 20px;
+    color: $dark;
+}
+
+p {
+    font-size: 18px;
+    color: $grey;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    color: $blue;
+    text-transform: uppercase;
+}
+
+.hr {
+    border: 1px solid $hr-color;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}

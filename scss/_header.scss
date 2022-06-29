@@ -1,0 +1,189 @@
+@import "variables";
+
+.header {
+    background-image: url(../img/photo.png);
+    background-color: #16151b;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    padding-top: 21px;
+
+    .navbar {
+        margin-bottom: 54px;
+        padding: 2px 0 0 0;
+
+        .navbar-brand__logo {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 7px;
+            letter-spacing: 1.6px;
+            margin-right: 3px;
+        }
+
+        .navbar-brand__slogan {
+            padding-top: 2px;
+            font-size: 9px;
+            opacity: 0.3;
+            color: $white;
+            line-height: 9px;
+            margin-top: 7px;
+            text-transform: uppercase;
+            letter-spacing: 0.20em;
+        }
+
+        .navbar-toggler {
+            &-icon {
+                color: $white;
+            }
+        }
+
+        .navbar-nav {
+            column-gap: 5px;
+
+            .nav-link {
+                font-size: 16px;
+                font-weight: 600;
+                margin: 1px -9px -1px 10px;
+                position: relative;
+                color: $white;
+                letter-spacing: 0.16px;
+
+                &:hover:before {
+                    display: block;
+                    position: absolute;
+                    content: url(../img/blue_line.png);
+                    bottom: 14px;
+                    left: 0;
+                    right: 0;
+                    width: 42px;
+                    height: 2px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .header-content {
+        &__subtitle {
+            margin: 34px 0 0 0;
+        }
+
+        &__title {
+            margin: 0;
+            padding-top: 19px;
+        }
+
+        &__description {
+            margin: 0;
+            padding: 23px 106px 0 0;
+        }
+    }
+
+    .header-button {
+        padding-top: 60px;
+
+        &__download {
+            background-color: $blue;
+            box-shadow: 0px 0px 3px 0px rgba(3, 3, 3, 0.1);
+            width: 160px;
+            height: 50px;
+            cursor: pointer;
+            border-radius: 4px;
+
+            &:hover {
+                color: $dark;
+                transition: 0.3s;
+            }
+        }
+
+        &__features {
+            width: 160px;
+            height: 50px;
+            border: 0.5px solid grey;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+            line-height: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: $white;
+            margin-right: 10px;
+
+            &:hover {
+                background-color: $blue;
+                transition: 0.3s;
+                border: 0.5px solid $blue;
+            }
+        }
+    }
+
+    &-mobile {
+        margin-top: -2px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .header {
+        .header-button {
+            margin-bottom: $gutterM;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .header {
+        .navbar {
+            &-nav {
+
+                .nav-link {
+                    padding-top: $gutterS;
+                    text-align: center;
+
+                    &:hover:before {
+                        left: 1;
+                        margin: 0;
+                    }
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        .header-button {
+            padding-top: $gutterM;
+        }
+
+        .navbar {
+            margin-bottom: $gutterM;
+            padding: 3px $gutterS 0px 11px;
+        }
+
+        .header-content {
+            &__subtitle {
+                margin-top: $gutterM;
+            }
+
+            &__title {
+                font-size: 36px;
+            }
+
+            &__description {
+                padding-right: $gutterM;
+            }
+        }
+    }
+}

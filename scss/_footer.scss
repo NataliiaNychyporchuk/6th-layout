@@ -1,0 +1,35 @@
+@import "variables";
+
+.footer {
+    background-color: $background;
+    padding-top: 29px;
+    padding-bottom: 23px;
+
+    &-icons {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        &__link {
+            margin-right: 18px;
+            transition: color 200ms ease;
+            color: $blue-magenta;
+            font-size: 19px;
+
+            &:hover {
+                color: $blue;
+            }
+        }
+    }
+
+    &-copyright {
+        text-align: center;
+        text-transform: uppercase;
+        color: $blue-magenta;
+        font-weight: 600;
+        line-height: 48px;
+        font-size: 14px;
+    }
+}

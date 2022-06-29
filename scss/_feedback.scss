@@ -1,0 +1,111 @@
+@import "variables";
+
+.feedback {
+    background-image: url(../img/Warstwa_8.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-color: $background;
+
+    &-info {
+        padding: 45px 0 86px 0;
+        text-align: center;
+
+        &__title {
+            color: $white;
+            margin-bottom: 18px;
+        }
+
+        .blue-line {
+            margin: 0 auto;
+        }
+    }
+
+    .carousel-indicators {
+        bottom: $gutterL;
+
+        li {
+            width: 7px;
+            height: 7px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 50%;
+            background-color: transparent;
+            margin: 0px -2px -6px 24px;
+        }
+
+        .active {
+            width: 12px;
+            height: 12px;
+            background-color: $white;
+        }
+    }
+
+    .carousel-item {
+        display: flex;
+        margin-bottom: 79px;
+
+        .feedback-slider__content {
+            padding-bottom: 131px;
+        }
+
+        .feedback-slider__text {
+            margin: 0 26px 17px 2px;
+            font-style: italic;
+            font-size: 23px;
+            line-height: 32px;
+            color: $white;
+        }
+
+        .feedback-slider__avatar {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            .feedback-slider__img {
+                margin-right: 12px;
+            }
+
+            .feedback-slider__description {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 12px;
+                padding-left: 25px;
+
+                .feedback-slider__name {
+                    line-height: 41px;
+                    color: $white;
+                    margin: 0;
+                    font-weight: 400;
+                    font-size: 16px;
+                }
+
+                .feedback-slider__job {
+                    font-weight: 700;
+                    color: $white;
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .feedback {
+        &-info {
+            padding: 21px 0 43px 0;
+        }
+
+        .carousel-item {
+            .feedback-slider__content {
+                padding-bottom: $gutterM;
+
+                .feedback-slider__text {
+                    font-size: 18px;
+                    margin: 16px 0 0 13px;
+
+                }
+            }
+        }
+    }
+}

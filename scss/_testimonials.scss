@@ -1,0 +1,43 @@
+@import "variables";
+
+.testimonials {
+    padding-top: 95px;
+    background-color: #f2f2f2;
+
+    &__img {
+        margin: -42px 0px 33px -7px;
+        display: inline-block;
+        transform: scale(1.08);
+    }
+
+    .testimonials-details {
+        margin-top: 18px;
+
+        &__title {
+            margin-bottom: 18px;
+        }
+
+        &__description {
+            font-size: 18px;
+            line-height: 26px;
+            margin-top: 24px;
+        }
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .testimonials {
+        padding-top: $gutterL;
+
+        &__img {
+            margin-top: $gutterM;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding-top: $gutterM;
+    }
+}

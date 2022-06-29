@@ -1,0 +1,174 @@
+@import "variables";
+
+.contact {
+    background-color: $lightgrey;
+
+    &-text {
+        text-align: center;
+        padding: 41px 0;
+
+        &__title {
+            margin-top: -8px;
+
+        }
+
+        .blue-line {
+            margin: 18px auto 0;
+        }
+    }
+
+    .contact__details {
+        text-align: center;
+
+        .contact-item {
+            margin-top: $gutterM;
+
+            .contact-img {
+                margin: 0 auto;
+            }
+
+            .contact-info {
+                margin: 0;
+                padding: 24px 23px 0px $gutterM;
+
+                a {
+                    color: $grey;
+
+                    &:hover {
+                        color: $grey;
+                    }
+                }
+            }
+
+            .contact-info__mail {
+                font-size: 18px;
+                margin: 0;
+                padding: 31px 23px 0px 20px;
+
+                a {
+                    color: $grey;
+
+                    &:hover {
+                        color: $grey;
+                    }
+                }
+
+            }
+        }
+    }
+
+    .contact-form {
+        position: relative;
+        top: 68px;
+        padding: $gutterL 43px $gutterM 33px;
+        background-color: $dark;
+        max-width: 700px;
+        margin: 0 auto;
+
+
+        input {
+            width: 300px;
+            height: 50px;
+            background-color: #15141a;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 3px;
+            margin: 11px 0px 9px -1px;
+            font-size: 14px;
+            line-height: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #fff;
+            padding-left: 17px;
+        }
+
+        textarea {
+            resize: none;
+            width: 300px;
+            height: 190px;
+            background-color: $dark;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 5px;
+            font-size: 14px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $white;
+            margin-top: 9px;
+            padding: 14px $gutterM 0px;
+        }
+    }
+
+    .contact-button {
+        display: flex;
+        justify-content: center;
+        background-color: $blue;
+        text-align: center;
+        width: 162px;
+        height: 52px;
+        font-size: 14px;
+        line-height: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $white;
+        border: 0.5px solid grey;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-right: 12px;
+
+        &:hover {
+            color: $dark;
+            transition: 0.3s;
+        }
+    }
+}
+
+.contact__map {
+    iframe {
+        display: block;
+        border: none;
+        height: 370px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 992px) {
+    .contact {
+        .contact__details {
+            .contact-item {
+                .contact-info {
+                    padding: $gutterS;
+                }
+
+                .contact-info__mail {
+                    padding: $gutterS;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contact {
+        &-text {
+            padding: $gutterM;
+        }
+
+        .blue-line {
+            margin: 0 auto $gutterS;
+        }
+
+        .contact-form {
+            input {
+                width: 100%;
+                margin-right: $gutterS;
+            }
+
+            textarea {
+                width: 100%;
+            }
+        }
+
+        .contact-button {
+            margin: $gutterS auto;
+        }
+    }
+}

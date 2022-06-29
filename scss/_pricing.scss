@@ -1,0 +1,175 @@
+@import "variables";
+    .pricing-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 41px;
+
+
+        &__subtitle {
+            line-height: 48px;
+            letter-spacing: 0.1em;
+        }
+
+        &__title {
+            margin: -11px 0 23px 0;
+            letter-spacing: 0.2px;
+        }
+        .blue-line {
+            margin-bottom: 55px;
+        }
+    }
+
+    .pricing-card {
+        text-align: center;
+        margin: 70px 0 59px 0;
+        border: 1px solid $hr-color;
+        $parent: &;
+
+        &:hover {
+            #{$parent}__title {
+                color: $blue;
+            }
+
+            #{$parent}__value {
+                color: $white;
+            }
+
+            #{$parent}__currency {
+                color: $white;
+            }
+
+            #{$parent}__pro-month {
+                color: $white;
+            }
+
+            #{$parent}__price {
+                background-color: $blue;
+            }
+
+            #{$parent}__button {
+                background-color: $blue;
+            }
+
+            #{$parent}__link {
+                color: $white;
+                text-decoration: none;
+            }
+
+            transition: 0.5s;
+        }
+
+        &__tariff {
+            padding-bottom: 34px;
+            margin: -20px 0;
+        }
+
+        &__price {
+            padding-bottom: 43px;
+            border-top: 1px solid $hr-color;
+            border-bottom: 1px solid $hr-color;
+        }
+
+        &__title {
+            margin-top: 48px;
+            font-size: 24px;
+            line-height: 18px;
+            font-weight: 700;
+            color: $dark;
+            text-transform: uppercase;
+        }
+
+        &__price {
+            padding-bottom: 43px;
+            border-top: 1px solid $hr-color;
+            border-bottom: 1px solid $hr-color;
+        }
+
+        &__fee {
+            padding: 35px 0 3px 0;
+        }
+
+        &__charge {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+
+        &__currency {
+            font-size: 27px;
+            line-height: $gutterM;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin: 10px 0 0 13px;
+        }
+
+        &__value {
+            font-size: 60px;
+            font-weight: 600;
+            margin: -16px 17px -24px 0px;
+            color: $dark;
+        }
+
+        &__button {
+            margin: 39px auto 28px;
+            width: 162px;
+            height: 52px;
+            border: 1px solid $hr-color;
+
+            a {
+                text-transform: uppercase;
+                font-size: 14px;
+                line-height: 50px;
+                align-items: center;
+                font-weight: 700;
+                color: $blue;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        &__pro-month {
+            font-size: 18px;
+            line-height: 28px;
+            color: $grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 7px;
+            text-transform: none;
+        }
+
+        &__details {
+            margin: 43px 33px 0 35px;
+
+        }
+
+        &__text {
+            color: $grey;
+            line-height: 26px;
+        }
+
+        &__bluetext {
+            color: $blue
+        }
+    }
+
+@media (max-width: 1200px) {
+        .pricing-info {
+            padding-top: $gutterL;
+        }
+
+        .pricing-card {
+            margin: $gutterL 0;
+        }
+    }
+
+@media (max-width: 768px) {
+        .pricing-info {
+            padding-top: $gutterM;
+        }
+
+        .pricing-card {
+            margin: $gutterM 0;
+        }
+    }
